@@ -1,0 +1,61 @@
+<?xml version="1.0" encoding="UTF-8" ?>
+<configuration>
+
+	<appender name="FILE"
+		class="ch.qos.logback.core.rolling.RollingFileAppender">
+		<File>${log.path:-.}/platform/platform.log</File>
+		 <rollingPolicy class="ch.qos.logback.core.rolling.SizeAndTimeBasedRollingPolicy">
+	        <fileNamePattern>${log.path:-.}/platform/platform.%d{yyyy-MM-dd}-%i.log</fileNamePattern>
+	        <maxFileSize>500MB</maxFileSize>    
+	        <maxHistory>30</maxHistory>
+	        <totalSizeCap>5000MB</totalSizeCap>
+	    </rollingPolicy>
+		<layout>
+			<Pattern>%-20(%d{yyyy-MM-dd HH:mm:ss.SSS} [%thread]) %-5level
+				%logger{32} - %msg%n</Pattern>
+		</layout>
+	</appender>
+
+	<appender name="STDOUT" class="ch.qos.logback.core.ConsoleAppender">
+
+		<layout>
+			<pattern>
+				<Pattern>%-20(%d{yyyy-MM-dd HH:mm:ss.SSS} [%thread]) %-5level
+				%logger{32} - %msg%n</Pattern>
+			</pattern>
+		</layout>
+	</appender>
+	
+
+
+	<appender name="ASYNC" class="ch.qos.logback.classic.AsyncAppender">
+		<discardingThreshold>0</discardingThreshold>
+		<queueSize>1024</queueSize>
+		<appender-ref ref="FILE" />
+	</appender>
+
+	<logger name="mybatis_sql" level="DEBUG" />
+	<logger name="com.yzw.platform.dao" level="DEBUG" />
+	
+	<root level="info">
+		        <appender-ref ref="STDOUT" />
+				<appender-ref ref="ASYNC" />
+			</root>
+
+
+  <!-- <if condition='property("runMode").contains("prod")'>
+	    <then>
+	        <root level="info">
+				<appender-ref ref="ASYNC" />
+				<appender-ref ref="errorAppender" />
+			</root>
+	    </then>
+	     <else>
+	        <root level="info">
+		        <appender-ref ref="STDOUT" />
+				<appender-ref ref="ASYNC" />
+				<appender-ref ref="errorAppender" />
+			</root>
+	     </else>
+	  </if> -->
+</configuration>

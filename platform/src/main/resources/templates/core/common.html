@@ -1,0 +1,14 @@
+<script th:fragment="basePath" type="text/javascript" xmlns:th="http://www.springframework.org/schema/mvc" th:inline="javascript">
+    /*<![CDATA[*/
+        var scheme =/*[[${#httpServletRequest.getHeader("X-Forwarded-Scheme")}]]*/;
+        if(scheme == null || "" == scheme) {
+            scheme = /*[[${#httpServletRequest.getScheme()}]]*/;
+        }
+        var port =/*[[${#httpServletRequest.getServerPort()}]]*/;
+        var path = /*[[${"://" + #httpServletRequest.getServerName() + ":" + #httpServletRequest.getServerPort() }]]*/;
+        if(port == 80 || port == 443){
+            path = /*[[${"://" + #httpServletRequest.getServerName() + "/"}]]*/;
+        }
+        var basePath = scheme +  path;
+    /*]]>*/
+</script>

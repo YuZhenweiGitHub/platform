@@ -1,0 +1,392 @@
+2019-06-17 14:52:27.052 [main] INFO 
+				c.y.platform.PlatformApplication - Starting PlatformApplication on DEV-012 with PID 3600 (E:\yzwideaworkspace\platform\target\classes started by 6156566 in E:\yzwideaworkspace\platform)
+2019-06-17 14:52:27.064 [main] INFO 
+				c.y.platform.PlatformApplication - No active profile set, falling back to default profiles: default
+2019-06-17 14:52:32.097 [main] INFO 
+				o.s.d.r.c.RepositoryConfigurationDelegate - Multiple Spring Data modules found, entering strict repository configuration mode!
+2019-06-17 14:52:32.109 [main] INFO 
+				o.s.d.r.c.RepositoryConfigurationDelegate - Bootstrapping Spring Data repositories in DEFAULT mode.
+2019-06-17 14:52:32.241 [main] INFO 
+				o.s.d.r.c.RepositoryConfigurationDelegate - Finished Spring Data repository scanning in 75ms. Found 0 repository interfaces.
+2019-06-17 14:52:33.138 [main] INFO 
+				o.s.c.s.PostProcessorRegistrationDelegate$BeanPostProcessorChecker - Bean 'shiroConfig' of type [com.yzw.platform.config.ShiroConfig$$EnhancerBySpringCGLIB$$80d37d00] is not eligible for getting processed by all BeanPostProcessors (for example: not eligible for auto-proxying)
+2019-06-17 14:52:35.705 [main] INFO 
+				o.s.c.s.PostProcessorRegistrationDelegate$BeanPostProcessorChecker - Bean 'credentialsMatcher' of type [org.apache.shiro.authc.credential.HashedCredentialsMatcher] is not eligible for getting processed by all BeanPostProcessors (for example: not eligible for auto-proxying)
+2019-06-17 14:52:35.957 [main] INFO 
+				o.s.c.s.PostProcessorRegistrationDelegate$BeanPostProcessorChecker - Bean 'mybatis-org.mybatis.spring.boot.autoconfigure.MybatisProperties' of type [org.mybatis.spring.boot.autoconfigure.MybatisProperties] is not eligible for getting processed by all BeanPostProcessors (for example: not eligible for auto-proxying)
+2019-06-17 14:52:35.980 [main] INFO 
+				o.s.c.s.PostProcessorRegistrationDelegate$BeanPostProcessorChecker - Bean 'org.mybatis.spring.boot.autoconfigure.MybatisAutoConfiguration' of type [org.mybatis.spring.boot.autoconfigure.MybatisAutoConfiguration$$EnhancerBySpringCGLIB$$1bcb43ee] is not eligible for getting processed by all BeanPostProcessors (for example: not eligible for auto-proxying)
+2019-06-17 14:52:36.105 [main] INFO 
+				o.s.c.s.PostProcessorRegistrationDelegate$BeanPostProcessorChecker - Bean 'org.springframework.boot.autoconfigure.jdbc.DataSourceConfiguration$Hikari' of type [org.springframework.boot.autoconfigure.jdbc.DataSourceConfiguration$Hikari] is not eligible for getting processed by all BeanPostProcessors (for example: not eligible for auto-proxying)
+2019-06-17 14:52:36.226 [main] INFO 
+				o.s.c.s.PostProcessorRegistrationDelegate$BeanPostProcessorChecker - Bean 'spring.datasource-org.springframework.boot.autoconfigure.jdbc.DataSourceProperties' of type [org.springframework.boot.autoconfigure.jdbc.DataSourceProperties] is not eligible for getting processed by all BeanPostProcessors (for example: not eligible for auto-proxying)
+2019-06-17 14:52:36.448 [main] INFO 
+				o.s.c.s.PostProcessorRegistrationDelegate$BeanPostProcessorChecker - Bean 'dataSource' of type [com.zaxxer.hikari.HikariDataSource] is not eligible for getting processed by all BeanPostProcessors (for example: not eligible for auto-proxying)
+2019-06-17 14:52:37.113 [main] INFO 
+				o.s.c.s.PostProcessorRegistrationDelegate$BeanPostProcessorChecker - Bean 'sqlSessionFactory' of type [org.apache.ibatis.session.defaults.DefaultSqlSessionFactory] is not eligible for getting processed by all BeanPostProcessors (for example: not eligible for auto-proxying)
+2019-06-17 14:52:37.128 [main] INFO 
+				o.s.c.s.PostProcessorRegistrationDelegate$BeanPostProcessorChecker - Bean 'sqlSessionTemplate' of type [org.mybatis.spring.SqlSessionTemplate] is not eligible for getting processed by all BeanPostProcessors (for example: not eligible for auto-proxying)
+2019-06-17 14:52:37.131 [main] INFO 
+				o.s.c.s.PostProcessorRegistrationDelegate$BeanPostProcessorChecker - Bean 'userInfoMapper' of type [org.mybatis.spring.mapper.MapperFactoryBean] is not eligible for getting processed by all BeanPostProcessors (for example: not eligible for auto-proxying)
+2019-06-17 14:52:37.132 [main] INFO 
+				o.s.c.s.PostProcessorRegistrationDelegate$BeanPostProcessorChecker - Bean 'userInfoMapper' of type [com.sun.proxy.$Proxy54] is not eligible for getting processed by all BeanPostProcessors (for example: not eligible for auto-proxying)
+2019-06-17 14:52:37.134 [main] INFO 
+				o.s.c.s.PostProcessorRegistrationDelegate$BeanPostProcessorChecker - Bean 'userInfoBo' of type [com.yzw.platform.bo.user.UserInfoBo] is not eligible for getting processed by all BeanPostProcessors (for example: not eligible for auto-proxying)
+2019-06-17 14:52:37.135 [main] INFO 
+				o.s.c.s.PostProcessorRegistrationDelegate$BeanPostProcessorChecker - Bean 'userService' of type [com.yzw.platform.service.user.impl.UserServiceImpl] is not eligible for getting processed by all BeanPostProcessors (for example: not eligible for auto-proxying)
+2019-06-17 14:52:37.136 [main] INFO 
+				o.s.c.s.PostProcessorRegistrationDelegate$BeanPostProcessorChecker - Bean 'shiroCustomRealm' of type [com.yzw.platform.config.ShiroCustomRealm] is not eligible for getting processed by all BeanPostProcessors (for example: not eligible for auto-proxying)
+2019-06-17 14:52:37.148 [main] INFO 
+				o.s.c.s.PostProcessorRegistrationDelegate$BeanPostProcessorChecker - Bean 'securityManager' of type [org.apache.shiro.web.mgt.DefaultWebSecurityManager] is not eligible for getting processed by all BeanPostProcessors (for example: not eligible for auto-proxying)
+2019-06-17 14:52:37.252 [main] INFO 
+				o.s.c.s.PostProcessorRegistrationDelegate$BeanPostProcessorChecker - Bean 'org.springframework.transaction.annotation.ProxyTransactionManagementConfiguration' of type [org.springframework.transaction.annotation.ProxyTransactionManagementConfiguration$$EnhancerBySpringCGLIB$$e8f6f2be] is not eligible for getting processed by all BeanPostProcessors (for example: not eligible for auto-proxying)
+2019-06-17 14:52:37.307 [main] INFO 
+				o.s.c.s.PostProcessorRegistrationDelegate$BeanPostProcessorChecker - Bean 'authorizationAttributeSourceAdvisor' of type [org.apache.shiro.spring.security.interceptor.AuthorizationAttributeSourceAdvisor] is not eligible for getting processed by all BeanPostProcessors (for example: not eligible for auto-proxying)
+2019-06-17 14:52:39.404 [main] INFO 
+				o.s.b.w.e.tomcat.TomcatWebServer - Tomcat initialized with port(s): 8080 (http)
+2019-06-17 14:52:39.473 [main] INFO 
+				o.a.c.http11.Http11NioProtocol - Initializing ProtocolHandler ["http-nio-8080"]
+2019-06-17 14:52:39.529 [main] INFO 
+				o.a.c.core.StandardService - Starting service [Tomcat]
+2019-06-17 14:52:39.529 [main] INFO 
+				o.a.catalina.core.StandardEngine - Starting Servlet engine: [Apache Tomcat/9.0.16]
+2019-06-17 14:52:39.544 [main] INFO 
+				o.a.c.core.AprLifecycleListener - The APR based Apache Tomcat Native library which allows optimal performance in production environments was not found on the java.library.path: [D:\Java\jdk1.8\bin;C:\WINDOWS\Sun\Java\bin;C:\WINDOWS\system32;C:\WINDOWS;D:\tool\;C:\WINDOWS\system32;C:\WINDOWS;C:\WINDOWS\System32\Wbem;C:\WINDOWS\System32\WindowsPowerShell\v1.0\;D:\Program Files\TortoiseSVN\bin;D:\Java\jdk1.8\bin;D:\Java\jdk1.8\jre\bin;C:\Program Files\OpenVPN\bin;C:\WINDOWS\System32\OpenSSH\;d:\tool\Git\cmd;C:\Users\6156566\AppData\Local\Microsoft\WindowsApps;C:\Users\6156566\AppData\Local\BypassRuntm;.]
+2019-06-17 14:52:41.826 [main] INFO 
+				o.a.c.c.C.[.[localhost].[/] - Initializing Spring embedded WebApplicationContext
+2019-06-17 14:52:41.826 [main] INFO 
+				o.s.web.context.ContextLoader - Root WebApplicationContext: initialization completed in 14194 ms
+2019-06-17 14:52:43.800 [main] INFO 
+				o.s.s.c.ThreadPoolTaskExecutor - Initializing ExecutorService 'applicationTaskExecutor'
+2019-06-17 14:52:44.213 [main] WARN 
+				o.t.templatemode.TemplateMode - [THYMELEAF][main] Template Mode 'LEGACYHTML5' is deprecated. Using Template Mode 'HTML' instead.
+2019-06-17 14:52:46.567 [main] INFO 
+				o.a.c.http11.Http11NioProtocol - Starting ProtocolHandler ["http-nio-8080"]
+2019-06-17 14:52:46.613 [main] INFO 
+				o.s.b.w.e.tomcat.TomcatWebServer - Tomcat started on port(s): 8080 (http) with context path ''
+2019-06-17 14:52:46.620 [main] INFO 
+				c.y.platform.PlatformApplication - Started PlatformApplication in 22.525 seconds (JVM running for 42.985)
+2019-06-17 14:54:48.248 [http-nio-8080-exec-1] INFO 
+				o.a.c.c.C.[.[localhost].[/] - Initializing Spring DispatcherServlet 'dispatcherServlet'
+2019-06-17 14:54:48.248 [http-nio-8080-exec-1] INFO 
+				o.s.w.servlet.DispatcherServlet - Initializing Servlet 'dispatcherServlet'
+2019-06-17 14:54:48.261 [http-nio-8080-exec-1] INFO 
+				o.s.w.servlet.DispatcherServlet - Completed initialization in 13 ms
+2019-06-17 15:04:48.989 [main] INFO 
+				c.y.platform.PlatformApplication - Starting PlatformApplication on DEV-012 with PID 8956 (E:\yzwideaworkspace\platform\target\classes started by 6156566 in E:\yzwideaworkspace\platform)
+2019-06-17 15:04:48.993 [main] INFO 
+				c.y.platform.PlatformApplication - No active profile set, falling back to default profiles: default
+2019-06-17 15:04:50.668 [main] INFO 
+				o.s.d.r.c.RepositoryConfigurationDelegate - Multiple Spring Data modules found, entering strict repository configuration mode!
+2019-06-17 15:04:50.671 [main] INFO 
+				o.s.d.r.c.RepositoryConfigurationDelegate - Bootstrapping Spring Data repositories in DEFAULT mode.
+2019-06-17 15:04:50.756 [main] INFO 
+				o.s.d.r.c.RepositoryConfigurationDelegate - Finished Spring Data repository scanning in 65ms. Found 0 repository interfaces.
+2019-06-17 15:04:51.183 [main] INFO 
+				o.s.c.s.PostProcessorRegistrationDelegate$BeanPostProcessorChecker - Bean 'shiroConfig' of type [com.yzw.platform.config.ShiroConfig$$EnhancerBySpringCGLIB$$62bb3c4] is not eligible for getting processed by all BeanPostProcessors (for example: not eligible for auto-proxying)
+2019-06-17 15:04:51.780 [main] INFO 
+				o.s.c.s.PostProcessorRegistrationDelegate$BeanPostProcessorChecker - Bean 'credentialsMatcher' of type [org.apache.shiro.authc.credential.HashedCredentialsMatcher] is not eligible for getting processed by all BeanPostProcessors (for example: not eligible for auto-proxying)
+2019-06-17 15:04:51.850 [main] INFO 
+				o.s.c.s.PostProcessorRegistrationDelegate$BeanPostProcessorChecker - Bean 'mybatis-org.mybatis.spring.boot.autoconfigure.MybatisProperties' of type [org.mybatis.spring.boot.autoconfigure.MybatisProperties] is not eligible for getting processed by all BeanPostProcessors (for example: not eligible for auto-proxying)
+2019-06-17 15:04:51.862 [main] INFO 
+				o.s.c.s.PostProcessorRegistrationDelegate$BeanPostProcessorChecker - Bean 'org.mybatis.spring.boot.autoconfigure.MybatisAutoConfiguration' of type [org.mybatis.spring.boot.autoconfigure.MybatisAutoConfiguration$$EnhancerBySpringCGLIB$$a1237ab2] is not eligible for getting processed by all BeanPostProcessors (for example: not eligible for auto-proxying)
+2019-06-17 15:04:51.865 [main] INFO 
+				o.s.c.s.PostProcessorRegistrationDelegate$BeanPostProcessorChecker - Bean 'org.springframework.boot.autoconfigure.jdbc.DataSourceConfiguration$Hikari' of type [org.springframework.boot.autoconfigure.jdbc.DataSourceConfiguration$Hikari] is not eligible for getting processed by all BeanPostProcessors (for example: not eligible for auto-proxying)
+2019-06-17 15:04:51.886 [main] INFO 
+				o.s.c.s.PostProcessorRegistrationDelegate$BeanPostProcessorChecker - Bean 'spring.datasource-org.springframework.boot.autoconfigure.jdbc.DataSourceProperties' of type [org.springframework.boot.autoconfigure.jdbc.DataSourceProperties] is not eligible for getting processed by all BeanPostProcessors (for example: not eligible for auto-proxying)
+2019-06-17 15:04:51.956 [main] INFO 
+				o.s.c.s.PostProcessorRegistrationDelegate$BeanPostProcessorChecker - Bean 'dataSource' of type [com.zaxxer.hikari.HikariDataSource] is not eligible for getting processed by all BeanPostProcessors (for example: not eligible for auto-proxying)
+2019-06-17 15:04:52.269 [main] INFO 
+				o.s.c.s.PostProcessorRegistrationDelegate$BeanPostProcessorChecker - Bean 'sqlSessionFactory' of type [org.apache.ibatis.session.defaults.DefaultSqlSessionFactory] is not eligible for getting processed by all BeanPostProcessors (for example: not eligible for auto-proxying)
+2019-06-17 15:04:52.276 [main] INFO 
+				o.s.c.s.PostProcessorRegistrationDelegate$BeanPostProcessorChecker - Bean 'sqlSessionTemplate' of type [org.mybatis.spring.SqlSessionTemplate] is not eligible for getting processed by all BeanPostProcessors (for example: not eligible for auto-proxying)
+2019-06-17 15:04:52.278 [main] INFO 
+				o.s.c.s.PostProcessorRegistrationDelegate$BeanPostProcessorChecker - Bean 'userInfoMapper' of type [org.mybatis.spring.mapper.MapperFactoryBean] is not eligible for getting processed by all BeanPostProcessors (for example: not eligible for auto-proxying)
+2019-06-17 15:04:52.280 [main] INFO 
+				o.s.c.s.PostProcessorRegistrationDelegate$BeanPostProcessorChecker - Bean 'userInfoMapper' of type [com.sun.proxy.$Proxy54] is not eligible for getting processed by all BeanPostProcessors (for example: not eligible for auto-proxying)
+2019-06-17 15:04:52.281 [main] INFO 
+				o.s.c.s.PostProcessorRegistrationDelegate$BeanPostProcessorChecker - Bean 'userInfoBo' of type [com.yzw.platform.bo.user.UserInfoBo] is not eligible for getting processed by all BeanPostProcessors (for example: not eligible for auto-proxying)
+2019-06-17 15:04:52.283 [main] INFO 
+				o.s.c.s.PostProcessorRegistrationDelegate$BeanPostProcessorChecker - Bean 'userService' of type [com.yzw.platform.service.user.impl.UserServiceImpl] is not eligible for getting processed by all BeanPostProcessors (for example: not eligible for auto-proxying)
+2019-06-17 15:04:52.286 [main] INFO 
+				o.s.c.s.PostProcessorRegistrationDelegate$BeanPostProcessorChecker - Bean 'shiroCustomRealm' of type [com.yzw.platform.config.ShiroCustomRealm] is not eligible for getting processed by all BeanPostProcessors (for example: not eligible for auto-proxying)
+2019-06-17 15:04:52.292 [main] INFO 
+				o.s.c.s.PostProcessorRegistrationDelegate$BeanPostProcessorChecker - Bean 'securityManager' of type [org.apache.shiro.web.mgt.DefaultWebSecurityManager] is not eligible for getting processed by all BeanPostProcessors (for example: not eligible for auto-proxying)
+2019-06-17 15:04:52.371 [main] INFO 
+				o.s.c.s.PostProcessorRegistrationDelegate$BeanPostProcessorChecker - Bean 'org.springframework.transaction.annotation.ProxyTransactionManagementConfiguration' of type [org.springframework.transaction.annotation.ProxyTransactionManagementConfiguration$$EnhancerBySpringCGLIB$$6e4f2982] is not eligible for getting processed by all BeanPostProcessors (for example: not eligible for auto-proxying)
+2019-06-17 15:04:52.396 [main] INFO 
+				o.s.c.s.PostProcessorRegistrationDelegate$BeanPostProcessorChecker - Bean 'authorizationAttributeSourceAdvisor' of type [org.apache.shiro.spring.security.interceptor.AuthorizationAttributeSourceAdvisor] is not eligible for getting processed by all BeanPostProcessors (for example: not eligible for auto-proxying)
+2019-06-17 15:04:53.175 [main] INFO 
+				o.s.b.w.e.tomcat.TomcatWebServer - Tomcat initialized with port(s): 8080 (http)
+2019-06-17 15:04:53.202 [main] INFO 
+				o.a.c.http11.Http11NioProtocol - Initializing ProtocolHandler ["http-nio-8080"]
+2019-06-17 15:04:53.219 [main] INFO 
+				o.a.c.core.StandardService - Starting service [Tomcat]
+2019-06-17 15:04:53.219 [main] INFO 
+				o.a.catalina.core.StandardEngine - Starting Servlet engine: [Apache Tomcat/9.0.16]
+2019-06-17 15:04:53.228 [main] INFO 
+				o.a.c.core.AprLifecycleListener - The APR based Apache Tomcat Native library which allows optimal performance in production environments was not found on the java.library.path: [D:\Java\jdk1.8\bin;C:\WINDOWS\Sun\Java\bin;C:\WINDOWS\system32;C:\WINDOWS;D:\tool\;C:\WINDOWS\system32;C:\WINDOWS;C:\WINDOWS\System32\Wbem;C:\WINDOWS\System32\WindowsPowerShell\v1.0\;D:\Program Files\TortoiseSVN\bin;D:\Java\jdk1.8\bin;D:\Java\jdk1.8\jre\bin;C:\Program Files\OpenVPN\bin;C:\WINDOWS\System32\OpenSSH\;d:\tool\Git\cmd;C:\Users\6156566\AppData\Local\Microsoft\WindowsApps;C:\Users\6156566\AppData\Local\BypassRuntm;.]
+2019-06-17 15:04:53.417 [main] INFO 
+				o.a.c.c.C.[.[localhost].[/] - Initializing Spring embedded WebApplicationContext
+2019-06-17 15:04:53.420 [main] INFO 
+				o.s.web.context.ContextLoader - Root WebApplicationContext: initialization completed in 4316 ms
+2019-06-17 15:04:54.157 [main] INFO 
+				o.s.s.c.ThreadPoolTaskExecutor - Initializing ExecutorService 'applicationTaskExecutor'
+2019-06-17 15:04:54.452 [main] WARN 
+				o.t.templatemode.TemplateMode - [THYMELEAF][main] Template Mode 'LEGACYHTML5' is deprecated. Using Template Mode 'HTML' instead.
+2019-06-17 15:04:55.538 [main] INFO 
+				o.a.c.http11.Http11NioProtocol - Starting ProtocolHandler ["http-nio-8080"]
+2019-06-17 15:04:55.619 [main] INFO 
+				o.s.b.w.e.tomcat.TomcatWebServer - Tomcat started on port(s): 8080 (http) with context path ''
+2019-06-17 15:04:55.625 [main] INFO 
+				c.y.platform.PlatformApplication - Started PlatformApplication in 7.544 seconds (JVM running for 9.635)
+2019-06-17 15:08:50.019 [http-nio-8080-exec-1] INFO 
+				o.a.c.c.C.[.[localhost].[/] - Initializing Spring DispatcherServlet 'dispatcherServlet'
+2019-06-17 15:08:50.019 [http-nio-8080-exec-1] INFO 
+				o.s.w.servlet.DispatcherServlet - Initializing Servlet 'dispatcherServlet'
+2019-06-17 15:08:50.039 [http-nio-8080-exec-1] INFO 
+				o.s.w.servlet.DispatcherServlet - Completed initialization in 20 ms
+2019-06-17 15:13:17.786 [main] INFO 
+				c.y.platform.PlatformApplication - Starting PlatformApplication on DEV-012 with PID 3668 (E:\yzwideaworkspace\platform\target\classes started by 6156566 in E:\yzwideaworkspace\platform)
+2019-06-17 15:13:17.789 [main] INFO 
+				c.y.platform.PlatformApplication - No active profile set, falling back to default profiles: default
+2019-06-17 15:13:18.943 [main] INFO 
+				o.s.d.r.c.RepositoryConfigurationDelegate - Multiple Spring Data modules found, entering strict repository configuration mode!
+2019-06-17 15:13:18.947 [main] INFO 
+				o.s.d.r.c.RepositoryConfigurationDelegate - Bootstrapping Spring Data repositories in DEFAULT mode.
+2019-06-17 15:13:19.000 [main] INFO 
+				o.s.d.r.c.RepositoryConfigurationDelegate - Finished Spring Data repository scanning in 32ms. Found 0 repository interfaces.
+2019-06-17 15:13:19.398 [main] INFO 
+				o.s.c.s.PostProcessorRegistrationDelegate$BeanPostProcessorChecker - Bean 'shiroConfig' of type [com.yzw.platform.config.ShiroConfig$$EnhancerBySpringCGLIB$$d98bb154] is not eligible for getting processed by all BeanPostProcessors (for example: not eligible for auto-proxying)
+2019-06-17 15:13:19.881 [main] INFO 
+				o.s.c.s.PostProcessorRegistrationDelegate$BeanPostProcessorChecker - Bean 'credentialsMatcher' of type [org.apache.shiro.authc.credential.HashedCredentialsMatcher] is not eligible for getting processed by all BeanPostProcessors (for example: not eligible for auto-proxying)
+2019-06-17 15:13:19.942 [main] INFO 
+				o.s.c.s.PostProcessorRegistrationDelegate$BeanPostProcessorChecker - Bean 'mybatis-org.mybatis.spring.boot.autoconfigure.MybatisProperties' of type [org.mybatis.spring.boot.autoconfigure.MybatisProperties] is not eligible for getting processed by all BeanPostProcessors (for example: not eligible for auto-proxying)
+2019-06-17 15:13:19.952 [main] INFO 
+				o.s.c.s.PostProcessorRegistrationDelegate$BeanPostProcessorChecker - Bean 'org.mybatis.spring.boot.autoconfigure.MybatisAutoConfiguration' of type [org.mybatis.spring.boot.autoconfigure.MybatisAutoConfiguration$$EnhancerBySpringCGLIB$$74837842] is not eligible for getting processed by all BeanPostProcessors (for example: not eligible for auto-proxying)
+2019-06-17 15:13:19.954 [main] INFO 
+				o.s.c.s.PostProcessorRegistrationDelegate$BeanPostProcessorChecker - Bean 'org.springframework.boot.autoconfigure.jdbc.DataSourceConfiguration$Hikari' of type [org.springframework.boot.autoconfigure.jdbc.DataSourceConfiguration$Hikari] is not eligible for getting processed by all BeanPostProcessors (for example: not eligible for auto-proxying)
+2019-06-17 15:13:19.966 [main] INFO 
+				o.s.c.s.PostProcessorRegistrationDelegate$BeanPostProcessorChecker - Bean 'spring.datasource-org.springframework.boot.autoconfigure.jdbc.DataSourceProperties' of type [org.springframework.boot.autoconfigure.jdbc.DataSourceProperties] is not eligible for getting processed by all BeanPostProcessors (for example: not eligible for auto-proxying)
+2019-06-17 15:13:19.996 [main] INFO 
+				o.s.c.s.PostProcessorRegistrationDelegate$BeanPostProcessorChecker - Bean 'dataSource' of type [com.zaxxer.hikari.HikariDataSource] is not eligible for getting processed by all BeanPostProcessors (for example: not eligible for auto-proxying)
+2019-06-17 15:13:20.205 [main] INFO 
+				o.s.c.s.PostProcessorRegistrationDelegate$BeanPostProcessorChecker - Bean 'sqlSessionFactory' of type [org.apache.ibatis.session.defaults.DefaultSqlSessionFactory] is not eligible for getting processed by all BeanPostProcessors (for example: not eligible for auto-proxying)
+2019-06-17 15:13:20.212 [main] INFO 
+				o.s.c.s.PostProcessorRegistrationDelegate$BeanPostProcessorChecker - Bean 'sqlSessionTemplate' of type [org.mybatis.spring.SqlSessionTemplate] is not eligible for getting processed by all BeanPostProcessors (for example: not eligible for auto-proxying)
+2019-06-17 15:13:20.215 [main] INFO 
+				o.s.c.s.PostProcessorRegistrationDelegate$BeanPostProcessorChecker - Bean 'userInfoMapper' of type [org.mybatis.spring.mapper.MapperFactoryBean] is not eligible for getting processed by all BeanPostProcessors (for example: not eligible for auto-proxying)
+2019-06-17 15:13:20.217 [main] INFO 
+				o.s.c.s.PostProcessorRegistrationDelegate$BeanPostProcessorChecker - Bean 'userInfoMapper' of type [com.sun.proxy.$Proxy54] is not eligible for getting processed by all BeanPostProcessors (for example: not eligible for auto-proxying)
+2019-06-17 15:13:20.219 [main] INFO 
+				o.s.c.s.PostProcessorRegistrationDelegate$BeanPostProcessorChecker - Bean 'userInfoBo' of type [com.yzw.platform.bo.user.UserInfoBo] is not eligible for getting processed by all BeanPostProcessors (for example: not eligible for auto-proxying)
+2019-06-17 15:13:20.220 [main] INFO 
+				o.s.c.s.PostProcessorRegistrationDelegate$BeanPostProcessorChecker - Bean 'userService' of type [com.yzw.platform.service.user.impl.UserServiceImpl] is not eligible for getting processed by all BeanPostProcessors (for example: not eligible for auto-proxying)
+2019-06-17 15:13:20.220 [main] INFO 
+				o.s.c.s.PostProcessorRegistrationDelegate$BeanPostProcessorChecker - Bean 'shiroCustomRealm' of type [com.yzw.platform.config.ShiroCustomRealm] is not eligible for getting processed by all BeanPostProcessors (for example: not eligible for auto-proxying)
+2019-06-17 15:13:20.226 [main] INFO 
+				o.s.c.s.PostProcessorRegistrationDelegate$BeanPostProcessorChecker - Bean 'securityManager' of type [org.apache.shiro.web.mgt.DefaultWebSecurityManager] is not eligible for getting processed by all BeanPostProcessors (for example: not eligible for auto-proxying)
+2019-06-17 15:13:46.978 [main] INFO 
+				o.s.c.s.PostProcessorRegistrationDelegate$BeanPostProcessorChecker - Bean 'org.springframework.transaction.annotation.ProxyTransactionManagementConfiguration' of type [org.springframework.transaction.annotation.ProxyTransactionManagementConfiguration$$EnhancerBySpringCGLIB$$41af2712] is not eligible for getting processed by all BeanPostProcessors (for example: not eligible for auto-proxying)
+2019-06-17 15:13:47.017 [main] INFO 
+				o.s.c.s.PostProcessorRegistrationDelegate$BeanPostProcessorChecker - Bean 'authorizationAttributeSourceAdvisor' of type [org.apache.shiro.spring.security.interceptor.AuthorizationAttributeSourceAdvisor] is not eligible for getting processed by all BeanPostProcessors (for example: not eligible for auto-proxying)
+2019-06-17 15:13:47.767 [main] INFO 
+				o.s.b.w.e.tomcat.TomcatWebServer - Tomcat initialized with port(s): 8080 (http)
+2019-06-17 15:13:47.787 [main] INFO 
+				o.a.c.http11.Http11NioProtocol - Initializing ProtocolHandler ["http-nio-8080"]
+2019-06-17 15:13:47.801 [main] INFO 
+				o.a.c.core.StandardService - Starting service [Tomcat]
+2019-06-17 15:13:47.801 [main] INFO 
+				o.a.catalina.core.StandardEngine - Starting Servlet engine: [Apache Tomcat/9.0.16]
+2019-06-17 15:13:47.809 [main] INFO 
+				o.a.c.core.AprLifecycleListener - The APR based Apache Tomcat Native library which allows optimal performance in production environments was not found on the java.library.path: [D:\Java\jdk1.8\bin;C:\WINDOWS\Sun\Java\bin;C:\WINDOWS\system32;C:\WINDOWS;D:\tool\;C:\WINDOWS\system32;C:\WINDOWS;C:\WINDOWS\System32\Wbem;C:\WINDOWS\System32\WindowsPowerShell\v1.0\;D:\Program Files\TortoiseSVN\bin;D:\Java\jdk1.8\bin;D:\Java\jdk1.8\jre\bin;C:\Program Files\OpenVPN\bin;C:\WINDOWS\System32\OpenSSH\;d:\tool\Git\cmd;C:\Users\6156566\AppData\Local\Microsoft\WindowsApps;C:\Users\6156566\AppData\Local\BypassRuntm;.]
+2019-06-17 15:13:47.945 [main] INFO 
+				o.a.c.c.C.[.[localhost].[/] - Initializing Spring embedded WebApplicationContext
+2019-06-17 15:13:47.945 [main] INFO 
+				o.s.web.context.ContextLoader - Root WebApplicationContext: initialization completed in 30077 ms
+2019-06-17 15:13:48.654 [main] INFO 
+				o.s.s.c.ThreadPoolTaskExecutor - Initializing ExecutorService 'applicationTaskExecutor'
+2019-06-17 15:13:48.940 [main] WARN 
+				o.t.templatemode.TemplateMode - [THYMELEAF][main] Template Mode 'LEGACYHTML5' is deprecated. Using Template Mode 'HTML' instead.
+2019-06-17 15:13:50.332 [main] INFO 
+				o.a.c.http11.Http11NioProtocol - Starting ProtocolHandler ["http-nio-8080"]
+2019-06-17 15:13:50.369 [main] INFO 
+				o.s.b.w.e.tomcat.TomcatWebServer - Tomcat started on port(s): 8080 (http) with context path ''
+2019-06-17 15:13:50.374 [main] INFO 
+				c.y.platform.PlatformApplication - Started PlatformApplication in 33.313 seconds (JVM running for 40.162)
+2019-06-17 15:14:27.913 [http-nio-8080-exec-4] INFO 
+				o.a.c.c.C.[.[localhost].[/] - Initializing Spring DispatcherServlet 'dispatcherServlet'
+2019-06-17 15:14:27.913 [http-nio-8080-exec-4] INFO 
+				o.s.w.servlet.DispatcherServlet - Initializing Servlet 'dispatcherServlet'
+2019-06-17 15:14:27.929 [http-nio-8080-exec-4] INFO 
+				o.s.w.servlet.DispatcherServlet - Completed initialization in 16 ms
+2019-06-17 15:15:03.093 [http-nio-8080-exec-8] INFO 
+				c.y.p.config.ShiroCustomRealm - -------身份认证开始--------
+2019-06-17 15:15:03.156 [http-nio-8080-exec-8] INFO 
+				c.zaxxer.hikari.HikariDataSource - HikariPool-1 - Starting...
+2019-06-17 15:15:03.415 [http-nio-8080-exec-8] INFO 
+				c.zaxxer.hikari.HikariDataSource - HikariPool-1 - Start completed.
+2019-06-17 15:15:03.423 [http-nio-8080-exec-8] DEBUG
+				c.y.p.d.u.U.selectUserByName - ==>  Preparing: select id, USER_NAME_, PASS_WORD_, USERE_EMAIL_, USER_MOBILE_, SEX_, SYS_ROLE_ID_, USER_STATUS_, REGISTER_TIME_, LAST_LOGIN_IP_, LAST_LOGIN_TIME_, DELTE_FLAG_ from t_user_info where DELTE_FLAG_ = 0 and USER_NAME_ = ? 
+2019-06-17 15:15:03.446 [http-nio-8080-exec-8] DEBUG
+				c.y.p.d.u.U.selectUserByName - ==> Parameters: admin(String)
+2019-06-17 15:15:03.484 [http-nio-8080-exec-8] DEBUG
+				c.y.p.d.u.U.selectUserByName - <==      Total: 1
+2019-06-17 15:15:08.081 [http-nio-8080-exec-6] INFO 
+				c.y.p.config.ShiroCustomRealm - -------身份认证开始--------
+2019-06-17 15:15:08.083 [http-nio-8080-exec-6] DEBUG
+				c.y.p.d.u.U.selectUserByName - ==>  Preparing: select id, USER_NAME_, PASS_WORD_, USERE_EMAIL_, USER_MOBILE_, SEX_, SYS_ROLE_ID_, USER_STATUS_, REGISTER_TIME_, LAST_LOGIN_IP_, LAST_LOGIN_TIME_, DELTE_FLAG_ from t_user_info where DELTE_FLAG_ = 0 and USER_NAME_ = ? 
+2019-06-17 15:15:08.084 [http-nio-8080-exec-6] DEBUG
+				c.y.p.d.u.U.selectUserByName - ==> Parameters: admin(String)
+2019-06-17 15:15:08.085 [http-nio-8080-exec-6] DEBUG
+				c.y.p.d.u.U.selectUserByName - <==      Total: 1
+2019-06-17 15:15:10.753 [http-nio-8080-exec-10] INFO 
+				c.y.p.config.ShiroCustomRealm - -------身份认证开始--------
+2019-06-17 15:15:10.755 [http-nio-8080-exec-10] DEBUG
+				c.y.p.d.u.U.selectUserByName - ==>  Preparing: select id, USER_NAME_, PASS_WORD_, USERE_EMAIL_, USER_MOBILE_, SEX_, SYS_ROLE_ID_, USER_STATUS_, REGISTER_TIME_, LAST_LOGIN_IP_, LAST_LOGIN_TIME_, DELTE_FLAG_ from t_user_info where DELTE_FLAG_ = 0 and USER_NAME_ = ? 
+2019-06-17 15:15:10.755 [http-nio-8080-exec-10] DEBUG
+				c.y.p.d.u.U.selectUserByName - ==> Parameters: admin(String)
+2019-06-17 15:15:10.757 [http-nio-8080-exec-10] DEBUG
+				c.y.p.d.u.U.selectUserByName - <==      Total: 1
+2019-06-17 15:15:16.008 [http-nio-8080-exec-9] INFO 
+				c.y.p.config.ShiroCustomRealm - -------身份认证开始--------
+2019-06-17 15:15:16.009 [http-nio-8080-exec-9] DEBUG
+				c.y.p.d.u.U.selectUserByName - ==>  Preparing: select id, USER_NAME_, PASS_WORD_, USERE_EMAIL_, USER_MOBILE_, SEX_, SYS_ROLE_ID_, USER_STATUS_, REGISTER_TIME_, LAST_LOGIN_IP_, LAST_LOGIN_TIME_, DELTE_FLAG_ from t_user_info where DELTE_FLAG_ = 0 and USER_NAME_ = ? 
+2019-06-17 15:15:16.009 [http-nio-8080-exec-9] DEBUG
+				c.y.p.d.u.U.selectUserByName - ==> Parameters: admin(String)
+2019-06-17 15:15:16.013 [http-nio-8080-exec-9] DEBUG
+				c.y.p.d.u.U.selectUserByName - <==      Total: 1
+2019-06-17 15:15:23.729 [http-nio-8080-exec-4] INFO 
+				c.y.p.config.ShiroCustomRealm - -------身份认证开始--------
+2019-06-17 15:15:23.730 [http-nio-8080-exec-4] DEBUG
+				c.y.p.d.u.U.selectUserByName - ==>  Preparing: select id, USER_NAME_, PASS_WORD_, USERE_EMAIL_, USER_MOBILE_, SEX_, SYS_ROLE_ID_, USER_STATUS_, REGISTER_TIME_, LAST_LOGIN_IP_, LAST_LOGIN_TIME_, DELTE_FLAG_ from t_user_info where DELTE_FLAG_ = 0 and USER_NAME_ = ? 
+2019-06-17 15:15:23.730 [http-nio-8080-exec-4] DEBUG
+				c.y.p.d.u.U.selectUserByName - ==> Parameters: admin(String)
+2019-06-17 15:15:23.732 [http-nio-8080-exec-4] DEBUG
+				c.y.p.d.u.U.selectUserByName - <==      Total: 1
+2019-06-17 15:15:25.804 [http-nio-8080-exec-3] INFO 
+				c.y.p.config.ShiroCustomRealm - -------身份认证开始--------
+2019-06-17 15:15:25.805 [http-nio-8080-exec-3] DEBUG
+				c.y.p.d.u.U.selectUserByName - ==>  Preparing: select id, USER_NAME_, PASS_WORD_, USERE_EMAIL_, USER_MOBILE_, SEX_, SYS_ROLE_ID_, USER_STATUS_, REGISTER_TIME_, LAST_LOGIN_IP_, LAST_LOGIN_TIME_, DELTE_FLAG_ from t_user_info where DELTE_FLAG_ = 0 and USER_NAME_ = ? 
+2019-06-17 15:15:25.805 [http-nio-8080-exec-3] DEBUG
+				c.y.p.d.u.U.selectUserByName - ==> Parameters: admin(String)
+2019-06-17 15:15:25.812 [http-nio-8080-exec-3] DEBUG
+				c.y.p.d.u.U.selectUserByName - <==      Total: 1
+2019-06-17 15:15:27.058 [http-nio-8080-exec-2] INFO 
+				c.y.p.config.ShiroCustomRealm - -------身份认证开始--------
+2019-06-17 15:15:27.059 [http-nio-8080-exec-2] DEBUG
+				c.y.p.d.u.U.selectUserByName - ==>  Preparing: select id, USER_NAME_, PASS_WORD_, USERE_EMAIL_, USER_MOBILE_, SEX_, SYS_ROLE_ID_, USER_STATUS_, REGISTER_TIME_, LAST_LOGIN_IP_, LAST_LOGIN_TIME_, DELTE_FLAG_ from t_user_info where DELTE_FLAG_ = 0 and USER_NAME_ = ? 
+2019-06-17 15:15:27.060 [http-nio-8080-exec-2] DEBUG
+				c.y.p.d.u.U.selectUserByName - ==> Parameters: admin(String)
+2019-06-17 15:15:27.061 [http-nio-8080-exec-2] DEBUG
+				c.y.p.d.u.U.selectUserByName - <==      Total: 1
+2019-06-17 15:15:28.834 [http-nio-8080-exec-5] INFO 
+				c.y.p.config.ShiroCustomRealm - -------身份认证开始--------
+2019-06-17 15:15:28.835 [http-nio-8080-exec-5] DEBUG
+				c.y.p.d.u.U.selectUserByName - ==>  Preparing: select id, USER_NAME_, PASS_WORD_, USERE_EMAIL_, USER_MOBILE_, SEX_, SYS_ROLE_ID_, USER_STATUS_, REGISTER_TIME_, LAST_LOGIN_IP_, LAST_LOGIN_TIME_, DELTE_FLAG_ from t_user_info where DELTE_FLAG_ = 0 and USER_NAME_ = ? 
+2019-06-17 15:15:28.835 [http-nio-8080-exec-5] DEBUG
+				c.y.p.d.u.U.selectUserByName - ==> Parameters: admin(String)
+2019-06-17 15:15:28.838 [http-nio-8080-exec-5] DEBUG
+				c.y.p.d.u.U.selectUserByName - <==      Total: 1
+2019-06-17 15:16:05.424 [http-nio-8080-exec-1] INFO 
+				c.y.p.config.ShiroCustomRealm - -------身份认证开始--------
+2019-06-17 15:16:05.425 [http-nio-8080-exec-1] DEBUG
+				c.y.p.d.u.U.selectUserByName - ==>  Preparing: select id, USER_NAME_, PASS_WORD_, USERE_EMAIL_, USER_MOBILE_, SEX_, SYS_ROLE_ID_, USER_STATUS_, REGISTER_TIME_, LAST_LOGIN_IP_, LAST_LOGIN_TIME_, DELTE_FLAG_ from t_user_info where DELTE_FLAG_ = 0 and USER_NAME_ = ? 
+2019-06-17 15:16:05.426 [http-nio-8080-exec-1] DEBUG
+				c.y.p.d.u.U.selectUserByName - ==> Parameters: admin(String)
+2019-06-17 15:16:05.427 [http-nio-8080-exec-1] DEBUG
+				c.y.p.d.u.U.selectUserByName - <==      Total: 1
+2019-06-17 16:10:44.764 [main] INFO 
+				c.y.platform.PlatformApplication - Starting PlatformApplication on DEV-012 with PID 10920 (E:\yzwideaworkspace\platform\target\classes started by 6156566 in E:\yzwideaworkspace\platform)
+2019-06-17 16:10:44.768 [main] INFO 
+				c.y.platform.PlatformApplication - No active profile set, falling back to default profiles: default
+2019-06-17 16:10:46.615 [main] INFO 
+				o.s.d.r.c.RepositoryConfigurationDelegate - Multiple Spring Data modules found, entering strict repository configuration mode!
+2019-06-17 16:10:46.618 [main] INFO 
+				o.s.d.r.c.RepositoryConfigurationDelegate - Bootstrapping Spring Data repositories in DEFAULT mode.
+2019-06-17 16:10:46.672 [main] INFO 
+				o.s.d.r.c.RepositoryConfigurationDelegate - Finished Spring Data repository scanning in 33ms. Found 0 repository interfaces.
+2019-06-17 16:10:47.109 [main] INFO 
+				o.s.c.s.PostProcessorRegistrationDelegate$BeanPostProcessorChecker - Bean 'shiroConfig' of type [com.yzw.platform.config.ShiroConfig$$EnhancerBySpringCGLIB$$1be321f9] is not eligible for getting processed by all BeanPostProcessors (for example: not eligible for auto-proxying)
+2019-06-17 16:10:47.583 [main] INFO 
+				o.s.c.s.PostProcessorRegistrationDelegate$BeanPostProcessorChecker - Bean 'credentialsMatcher' of type [org.apache.shiro.authc.credential.HashedCredentialsMatcher] is not eligible for getting processed by all BeanPostProcessors (for example: not eligible for auto-proxying)
+2019-06-17 16:10:47.647 [main] INFO 
+				o.s.c.s.PostProcessorRegistrationDelegate$BeanPostProcessorChecker - Bean 'mybatis-org.mybatis.spring.boot.autoconfigure.MybatisProperties' of type [org.mybatis.spring.boot.autoconfigure.MybatisProperties] is not eligible for getting processed by all BeanPostProcessors (for example: not eligible for auto-proxying)
+2019-06-17 16:10:47.657 [main] INFO 
+				o.s.c.s.PostProcessorRegistrationDelegate$BeanPostProcessorChecker - Bean 'org.mybatis.spring.boot.autoconfigure.MybatisAutoConfiguration' of type [org.mybatis.spring.boot.autoconfigure.MybatisAutoConfiguration$$EnhancerBySpringCGLIB$$b6dae8e7] is not eligible for getting processed by all BeanPostProcessors (for example: not eligible for auto-proxying)
+2019-06-17 16:10:47.660 [main] INFO 
+				o.s.c.s.PostProcessorRegistrationDelegate$BeanPostProcessorChecker - Bean 'org.springframework.boot.autoconfigure.jdbc.DataSourceConfiguration$Hikari' of type [org.springframework.boot.autoconfigure.jdbc.DataSourceConfiguration$Hikari] is not eligible for getting processed by all BeanPostProcessors (for example: not eligible for auto-proxying)
+2019-06-17 16:10:47.675 [main] INFO 
+				o.s.c.s.PostProcessorRegistrationDelegate$BeanPostProcessorChecker - Bean 'spring.datasource-org.springframework.boot.autoconfigure.jdbc.DataSourceProperties' of type [org.springframework.boot.autoconfigure.jdbc.DataSourceProperties] is not eligible for getting processed by all BeanPostProcessors (for example: not eligible for auto-proxying)
+2019-06-17 16:10:47.710 [main] INFO 
+				o.s.c.s.PostProcessorRegistrationDelegate$BeanPostProcessorChecker - Bean 'dataSource' of type [com.zaxxer.hikari.HikariDataSource] is not eligible for getting processed by all BeanPostProcessors (for example: not eligible for auto-proxying)
+2019-06-17 16:10:48.005 [main] INFO 
+				o.s.c.s.PostProcessorRegistrationDelegate$BeanPostProcessorChecker - Bean 'sqlSessionFactory' of type [org.apache.ibatis.session.defaults.DefaultSqlSessionFactory] is not eligible for getting processed by all BeanPostProcessors (for example: not eligible for auto-proxying)
+2019-06-17 16:10:48.012 [main] INFO 
+				o.s.c.s.PostProcessorRegistrationDelegate$BeanPostProcessorChecker - Bean 'sqlSessionTemplate' of type [org.mybatis.spring.SqlSessionTemplate] is not eligible for getting processed by all BeanPostProcessors (for example: not eligible for auto-proxying)
+2019-06-17 16:10:48.014 [main] INFO 
+				o.s.c.s.PostProcessorRegistrationDelegate$BeanPostProcessorChecker - Bean 'userInfoMapper' of type [org.mybatis.spring.mapper.MapperFactoryBean] is not eligible for getting processed by all BeanPostProcessors (for example: not eligible for auto-proxying)
+2019-06-17 16:10:48.016 [main] INFO 
+				o.s.c.s.PostProcessorRegistrationDelegate$BeanPostProcessorChecker - Bean 'userInfoMapper' of type [com.sun.proxy.$Proxy54] is not eligible for getting processed by all BeanPostProcessors (for example: not eligible for auto-proxying)
+2019-06-17 16:10:48.018 [main] INFO 
+				o.s.c.s.PostProcessorRegistrationDelegate$BeanPostProcessorChecker - Bean 'userInfoBo' of type [com.yzw.platform.bo.user.UserInfoBo] is not eligible for getting processed by all BeanPostProcessors (for example: not eligible for auto-proxying)
+2019-06-17 16:10:48.022 [main] INFO 
+				o.s.c.s.PostProcessorRegistrationDelegate$BeanPostProcessorChecker - Bean 'userService' of type [com.yzw.platform.service.user.impl.UserServiceImpl] is not eligible for getting processed by all BeanPostProcessors (for example: not eligible for auto-proxying)
+2019-06-17 16:10:48.023 [main] INFO 
+				o.s.c.s.PostProcessorRegistrationDelegate$BeanPostProcessorChecker - Bean 'shiroCustomRealm' of type [com.yzw.platform.config.ShiroCustomRealm] is not eligible for getting processed by all BeanPostProcessors (for example: not eligible for auto-proxying)
+2019-06-17 16:10:48.028 [main] INFO 
+				o.s.c.s.PostProcessorRegistrationDelegate$BeanPostProcessorChecker - Bean 'securityManager' of type [org.apache.shiro.web.mgt.DefaultWebSecurityManager] is not eligible for getting processed by all BeanPostProcessors (for example: not eligible for auto-proxying)
+2019-06-17 16:10:48.090 [main] INFO 
+				o.s.c.s.PostProcessorRegistrationDelegate$BeanPostProcessorChecker - Bean 'org.springframework.transaction.annotation.ProxyTransactionManagementConfiguration' of type [org.springframework.transaction.annotation.ProxyTransactionManagementConfiguration$$EnhancerBySpringCGLIB$$840697b7] is not eligible for getting processed by all BeanPostProcessors (for example: not eligible for auto-proxying)
+2019-06-17 16:10:48.106 [main] INFO 
+				o.s.c.s.PostProcessorRegistrationDelegate$BeanPostProcessorChecker - Bean 'authorizationAttributeSourceAdvisor' of type [org.apache.shiro.spring.security.interceptor.AuthorizationAttributeSourceAdvisor] is not eligible for getting processed by all BeanPostProcessors (for example: not eligible for auto-proxying)
+2019-06-17 16:10:48.771 [main] INFO 
+				o.s.b.w.e.tomcat.TomcatWebServer - Tomcat initialized with port(s): 8080 (http)
+2019-06-17 16:10:48.791 [main] INFO 
+				o.a.c.http11.Http11NioProtocol - Initializing ProtocolHandler ["http-nio-8080"]
+2019-06-17 16:10:48.806 [main] INFO 
+				o.a.c.core.StandardService - Starting service [Tomcat]
+2019-06-17 16:10:48.806 [main] INFO 
+				o.a.catalina.core.StandardEngine - Starting Servlet engine: [Apache Tomcat/9.0.16]
+2019-06-17 16:10:48.816 [main] INFO 
+				o.a.c.core.AprLifecycleListener - The APR based Apache Tomcat Native library which allows optimal performance in production environments was not found on the java.library.path: [D:\Java\jdk1.8\bin;C:\WINDOWS\Sun\Java\bin;C:\WINDOWS\system32;C:\WINDOWS;D:\tool\;C:\WINDOWS\system32;C:\WINDOWS;C:\WINDOWS\System32\Wbem;C:\WINDOWS\System32\WindowsPowerShell\v1.0\;D:\Program Files\TortoiseSVN\bin;D:\Java\jdk1.8\bin;D:\Java\jdk1.8\jre\bin;C:\Program Files\OpenVPN\bin;C:\WINDOWS\System32\OpenSSH\;d:\tool\Git\cmd;C:\Users\6156566\AppData\Local\Microsoft\WindowsApps;C:\Users\6156566\AppData\Local\BypassRuntm;.]
+2019-06-17 16:10:48.958 [main] INFO 
+				o.a.c.c.C.[.[localhost].[/] - Initializing Spring embedded WebApplicationContext
+2019-06-17 16:10:48.958 [main] INFO 
+				o.s.web.context.ContextLoader - Root WebApplicationContext: initialization completed in 4121 ms
+2019-06-17 16:10:49.629 [main] INFO 
+				o.s.s.c.ThreadPoolTaskExecutor - Initializing ExecutorService 'applicationTaskExecutor'
+2019-06-17 16:10:49.895 [main] WARN 
+				o.t.templatemode.TemplateMode - [THYMELEAF][main] Template Mode 'LEGACYHTML5' is deprecated. Using Template Mode 'HTML' instead.
+2019-06-17 16:10:50.813 [main] INFO 
+				o.a.c.http11.Http11NioProtocol - Starting ProtocolHandler ["http-nio-8080"]
+2019-06-17 16:10:50.847 [main] INFO 
+				o.s.b.w.e.tomcat.TomcatWebServer - Tomcat started on port(s): 8080 (http) with context path ''
+2019-06-17 16:10:50.853 [main] INFO 
+				c.y.platform.PlatformApplication - Started PlatformApplication in 6.909 seconds (JVM running for 8.143)
+2019-06-17 16:11:59.993 [http-nio-8080-exec-1] INFO 
+				o.a.c.c.C.[.[localhost].[/] - Initializing Spring DispatcherServlet 'dispatcherServlet'
+2019-06-17 16:11:59.994 [http-nio-8080-exec-1] INFO 
+				o.s.w.servlet.DispatcherServlet - Initializing Servlet 'dispatcherServlet'
+2019-06-17 16:12:00.012 [http-nio-8080-exec-1] INFO 
+				o.s.w.servlet.DispatcherServlet - Completed initialization in 18 ms
+2019-06-17 16:12:14.574 [http-nio-8080-exec-6] INFO 
+				c.y.p.config.ShiroCustomRealm - -------身份认证开始--------
+2019-06-17 16:12:14.600 [http-nio-8080-exec-6] INFO 
+				c.zaxxer.hikari.HikariDataSource - HikariPool-1 - Starting...
+2019-06-17 16:12:14.832 [http-nio-8080-exec-6] INFO 
+				c.zaxxer.hikari.HikariDataSource - HikariPool-1 - Start completed.
+2019-06-17 16:12:14.841 [http-nio-8080-exec-6] DEBUG
+				c.y.p.d.u.U.selectUserByName - ==>  Preparing: select id, USER_NAME_, PASS_WORD_, USERE_EMAIL_, USER_MOBILE_, SEX_, SYS_ROLE_ID_, USER_STATUS_, REGISTER_TIME_, LAST_LOGIN_IP_, LAST_LOGIN_TIME_, DELTE_FLAG_ from t_user_info where DELTE_FLAG_ = 0 and USER_NAME_ = ? 
+2019-06-17 16:12:14.862 [http-nio-8080-exec-6] DEBUG
+				c.y.p.d.u.U.selectUserByName - ==> Parameters: admin(String)
+2019-06-17 16:12:14.877 [http-nio-8080-exec-6] DEBUG
+				c.y.p.d.u.U.selectUserByName - <==      Total: 1
+2019-06-17 17:51:04.855 [http-nio-8080-exec-1] INFO 
+				c.y.p.config.ShiroCustomRealm - -------身份认证开始--------
+2019-06-17 17:51:04.862 [http-nio-8080-exec-1] DEBUG
+				c.y.p.d.u.U.selectUserByName - ==>  Preparing: select id, USER_NAME_, PASS_WORD_, USERE_EMAIL_, USER_MOBILE_, SEX_, SYS_ROLE_ID_, USER_STATUS_, REGISTER_TIME_, LAST_LOGIN_IP_, LAST_LOGIN_TIME_, DELTE_FLAG_ from t_user_info where DELTE_FLAG_ = 0 and USER_NAME_ = ? 
+2019-06-17 17:51:04.865 [http-nio-8080-exec-1] DEBUG
+				c.y.p.d.u.U.selectUserByName - ==> Parameters: admin(String)
+2019-06-17 17:51:04.869 [http-nio-8080-exec-1] DEBUG
+				c.y.p.d.u.U.selectUserByName - <==      Total: 1

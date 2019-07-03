@@ -1,0 +1,16 @@
+2019-07-10 04:59:29.534 [HikariPool-1 housekeeper] WARN 
+				c.zaxxer.hikari.pool.HikariPool - HikariPool-1 - Thread starvation or clock leap detected (housekeeper delta=10h21m54s509ms108µs999ns).
+2019-07-10 06:56:39.512 [HikariPool-1 housekeeper] WARN 
+				c.zaxxer.hikari.pool.HikariPool - HikariPool-1 - Thread starvation or clock leap detected (housekeeper delta=1h54m38s541ms170µs505ns).
+2019-07-10 09:12:31.547 [HikariPool-1 housekeeper] WARN 
+				c.zaxxer.hikari.pool.HikariPool - HikariPool-1 - Thread starvation or clock leap detected (housekeeper delta=2h13m20s337ms93µs723ns).
+2019-07-10 12:31:20.516 [HikariPool-1 housekeeper] WARN 
+				c.zaxxer.hikari.pool.HikariPool - HikariPool-1 - Thread starvation or clock leap detected (housekeeper delta=15m18s331ms420µs584ns).
+2019-07-10 13:00:20.517 [HikariPool-1 housekeeper] WARN 
+				c.zaxxer.hikari.pool.HikariPool - HikariPool-1 - Thread starvation or clock leap detected (housekeeper delta=27m29s593ms925µs110ns).
+2019-07-10 13:34:49.762 [Thread-11] INFO 
+				o.s.s.c.ThreadPoolTaskExecutor - Shutting down ExecutorService 'applicationTaskExecutor'
+2019-07-10 13:34:50.129 [Thread-11] INFO 
+				c.zaxxer.hikari.HikariDataSource - HikariPool-1 - Shutdown initiated...
+2019-07-10 13:34:50.338 [Thread-11] INFO 
+				c.zaxxer.hikari.HikariDataSource - HikariPool-1 - Shutdown completed.
