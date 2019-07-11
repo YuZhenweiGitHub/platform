@@ -1,6 +1,7 @@
 package com.yzw.platform.bo.user;
 
-import com.yzw.platform.dao.mysql.user.UserInfoMapper;
+import com.yzw.platform.config.DynamicDataSourceAspect;
+import com.yzw.platform.dao.user.UserInfoMapper;
 import com.yzw.platform.entity.user.UserInfo;
 import org.springframework.beans.factory.annotation.Autowired;
 import org.springframework.stereotype.Component;
@@ -10,6 +11,9 @@ public class UserInfoBo {
 
     @Autowired
     private UserInfoMapper userInfoMapper;
+
+    @Autowired
+    private DynamicDataSourceAspect aspect;
 
     /**
      * 根据用户名查询用户信息

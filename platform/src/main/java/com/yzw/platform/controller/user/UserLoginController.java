@@ -1,5 +1,6 @@
 package com.yzw.platform.controller.user;
 
+import com.yzw.platform.annotation.DS;
 import com.yzw.platform.core.TokenManager;
 import com.yzw.platform.dto.user.UserQueryDto;
 import com.yzw.platform.entity.user.UserInfo;
@@ -35,7 +36,7 @@ public class UserLoginController {
 
     @RequestMapping(value = "login.html", method = RequestMethod.GET)
     public String skipLogin (HttpServletRequest request,Model model) {
-        model.addAttribute("systemName","羞答答");
+        model.addAttribute("systemName","YZW");
         return ConstantPath.LOGIN_PAGE_URL;
     }
 

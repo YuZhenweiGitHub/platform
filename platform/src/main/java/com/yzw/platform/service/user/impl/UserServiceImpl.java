@@ -1,8 +1,10 @@
 package com.yzw.platform.service.user.impl;
 
+import com.yzw.platform.annotation.DS;
 import com.yzw.platform.bo.user.UserInfoBo;
-import com.yzw.platform.dao.mysql.user.InfoStreetMapper;
-import com.yzw.platform.dao.sqlserver.VillageQkMapper;
+import com.yzw.platform.config.DataSourceConfig;
+import com.yzw.platform.dao.user.InfoStreetMapper;
+import com.yzw.platform.dao.user.VillageQkMapper;
 import com.yzw.platform.entity.user.InfoStreet;
 import com.yzw.platform.entity.user.UserInfo;
 import com.yzw.platform.entity.user.VillageQk;

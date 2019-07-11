@@ -1,14 +1,14 @@
 package com.yzw.platform.annotation;
 
+import com.yzw.platform.config.DynamicDataSource;
+
 import java.lang.annotation.*;
 
-@Documented
+@Target(ElementType.METHOD)
 @Retention(RetentionPolicy.RUNTIME)
-@Target({
-        ElementType.METHOD
-})
+@Documented
 public @interface DS {
 
-    String value() default "dataSource1";
+    String value() default DynamicDataSource.DEFAULT_DS;
 
 }

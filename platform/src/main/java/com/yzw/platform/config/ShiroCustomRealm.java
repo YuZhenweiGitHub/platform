@@ -11,6 +11,7 @@ import org.apache.shiro.realm.AuthorizingRealm;
 import org.apache.shiro.subject.PrincipalCollection;
 import org.apache.shiro.util.ByteSource;
 import org.springframework.beans.factory.annotation.Autowired;
+import org.springframework.context.annotation.Lazy;
 
 import java.util.HashSet;
 import java.util.Set;
@@ -21,6 +22,7 @@ import java.util.Set;
 @Slf4j
 public class ShiroCustomRealm extends AuthorizingRealm {
 
+    @Lazy
     @Autowired
     private UserService userService;
 

@@ -13,7 +13,7 @@ import org.springframework.stereotype.Component;
 import java.lang.reflect.Method;
 
 @Aspect
-@Order(1)
+@Order(-1)
 @Component
 public class DynamicDataSourceAspect {
 
@@ -32,7 +32,7 @@ public class DynamicDataSourceAspect {
         String methodName = point.getSignature().getName();
         //得到方法的参数的类型
         Class[] argClass = ((MethodSignature)point.getSignature()).getParameterTypes();
-        String dataSource = DataSourceContextHolder.DEFAULT_DS;
+        String dataSource = DynamicDataSource.DEFAULT_DS;
         try {
             // 得到访问的方法对象
             Method method = className.getMethod(methodName, argClass);
@@ -48,13 +48,14 @@ public class DynamicDataSourceAspect {
         }
 
         // 切换数据源
-        DataSourceContextHolder.setDB(dataSource);
+        DynamicDataSourceContextHolder.setDB(dataSource);
 
     }
 
 
     @After("cutMethod()")
     public void afterSwitchDS(JoinPoint point){
-        DataSourceContextHolder.clearDB();
+        DynamicDataSourceContextHolder.clearDataSourceKey();
     }
+
 }

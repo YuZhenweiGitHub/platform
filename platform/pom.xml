@@ -64,6 +64,14 @@
             <artifactId>spring-boot-starter-web</artifactId>
             <version>${spring-web.version}</version>
         </dependency>
+
+        <!-- druid数据源依赖 -->
+        <dependency>
+            <groupId>com.alibaba</groupId>
+            <artifactId>druid-spring-boot-starter</artifactId>
+            <version>1.1.9</version>
+        </dependency>
+
         <!-- 模板引擎 Thymeleaf 依赖 -->
         <dependency>
             <groupId>org.springframework.boot</groupId>
@@ -95,12 +103,12 @@
             <groupId>org.projectlombok</groupId>
             <artifactId>lombok</artifactId>
         </dependency>
+
         <dependency>
             <groupId>com.alibaba</groupId>
             <artifactId>fastjson</artifactId>
             <version>${fastjson.version}</version>
         </dependency>
-
         <!--spring session-->
         <!--<dependency>
             <groupId>org.springframework.session</groupId>
@@ -119,6 +127,7 @@
             <version>22.0</version>
         </dependency>
 
+        <!-- poi -->
         <dependency>
             <groupId>org.apache.poi</groupId>
             <artifactId>poi</artifactId>
@@ -129,6 +138,8 @@
             <artifactId>poi-ooxml</artifactId>
             <version>3.15</version>
         </dependency>
+
+        <!-- spring aop -->
         <dependency>
             <groupId>org.springframework.boot</groupId>
             <artifactId>spring-boot-starter-aop</artifactId>
