@@ -1,12 +1,14 @@
 package com.yzw.platform.controller.user;
 
-import com.yzw.platform.annotation.DS;
 import com.yzw.platform.core.TokenManager;
 import com.yzw.platform.dto.user.UserQueryDto;
 import com.yzw.platform.entity.user.UserInfo;
 import com.yzw.platform.enums.ResultMessageEnum;
 import com.yzw.platform.service.user.UserService;
-import com.yzw.platform.utils.*;
+import com.yzw.platform.utils.Constant;
+import com.yzw.platform.utils.ConstantPath;
+import com.yzw.platform.utils.ResultUtils;
+import com.yzw.platform.utils.SessionUtils;
 import org.apache.shiro.authc.*;
 import org.springframework.beans.factory.annotation.Autowired;
 import org.springframework.stereotype.Controller;
@@ -20,6 +22,15 @@ import org.springframework.web.bind.annotation.ResponseBody;
 import javax.servlet.http.HttpServletRequest;
 
 /**
+ * subject.isAuthenticated();            // 是否身份验证授权通过
+ * subject.isPermitted(permission);      // 验证权限字符串
+ * subject.isPermittedAll(permissions);  // 验证权限字符串全部通过
+ *
+ * @RequiresPermissions (value = { “ sys : user : view ”, “ sys : user : edit ” }, logical = Logical.OR)：表示当前 Subject 需要权限 user:view 或 user:edit。
+ * @RequiresRoles(value={“admin”, “user”}, logical=Logical.AND)：表示当前 Subject 需要角色 admin 和 user
+ * @RequiresAuthentication：表示当前Subject已经通过login进行了身份验证；
+ * @RequiresUser：表示当前 Subject 已经身份验证或者通过记住我登录的。
+ * @RequiresGuest：表示当前Subject没有身份验证或通过记住我登录过，即是游客身份。
  * @ClassName UserController
  * com.yzw.platform.user
  * @Description
@@ -47,12 +58,10 @@ public class UserLoginController {
 
     @RequestMapping(value = "/login.json", method = RequestMethod.POST)
     public @ResponseBody Object login (@Validated @RequestBody UserQueryDto queryDto) {
+        UserInfo userInfo = null;
         try {
             // 执行认证登陆
-            UserInfo userInfo = TokenManager.login(queryDto.getUserName(),queryDto.getPassWord(),queryDto.getRememberMe());
-            if (null == userInfo) {
-                return ResultUtils.buildMessageByEnum(ResultMessageEnum.USER_OR_PASSWORD_ERROR);
-            }
+            userInfo = TokenManager.login(queryDto.getUserName(),queryDto.getPassWord(),queryDto.getRememberMe());
         } catch (UnknownAccountException uae) {
             return ResultUtils.buildMessageByEnum(ResultMessageEnum.USER_NO_EXISTS_ERROR);
         } catch (IncorrectCredentialsException ice) {
@@ -62,6 +71,9 @@ public class UserLoginController {
         } catch (ExcessiveAttemptsException eae) {
             return ResultUtils.buildMessageByEnum(ResultMessageEnum.LOGIN_FAIL_NUMBER_TRANSFINITE_ERROR);
         } catch (AuthenticationException ae) {
+            return ResultUtils.buildMessageByEnum(ResultMessageEnum.USER_OR_PASSWORD_ERROR);
+        }
+        if (null == userInfo) {
             return ResultUtils.buildMessageByEnum(ResultMessageEnum.USER_OR_PASSWORD_ERROR);
         }
         return ResultUtils.buildSuccessMessage();

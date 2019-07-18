@@ -1,7 +1,10 @@
 package com.yzw.platform.config;
 
+import com.yzw.platform.bo.user.UserInfoBo;
+import com.yzw.platform.dao.user.UserInfoMapper;
+import com.yzw.platform.entity.user.InfoPermission;
+import com.yzw.platform.entity.user.InfoRole;
 import com.yzw.platform.entity.user.UserInfo;
-import com.yzw.platform.service.user.UserService;
 import lombok.extern.slf4j.Slf4j;
 import org.apache.shiro.SecurityUtils;
 import org.apache.shiro.authc.*;
@@ -11,10 +14,9 @@ import org.apache.shiro.realm.AuthorizingRealm;
 import org.apache.shiro.subject.PrincipalCollection;
 import org.apache.shiro.util.ByteSource;
 import org.springframework.beans.factory.annotation.Autowired;
-import org.springframework.context.annotation.Lazy;
 
-import java.util.HashSet;
-import java.util.Set;
+import java.util.*;
+import java.util.stream.Collectors;
 
 /**
  * 自定义shiro域
@@ -22,9 +24,8 @@ import java.util.Set;
 @Slf4j
 public class ShiroCustomRealm extends AuthorizingRealm {
 
-    @Lazy
     @Autowired
-    private UserService userService;
+    private UserInfoBo userInfoBo;
 
     /**
      * 权限相关：身份认证成功后，用户授权
@@ -33,22 +34,30 @@ public class ShiroCustomRealm extends AuthorizingRealm {
      */
     @Override
     protected AuthorizationInfo doGetAuthorizationInfo(PrincipalCollection principalCollection) {
-        String username1 = (String) principalCollection.getPrimaryPrincipal();
-        String username = (String) SecurityUtils.getSubject().getPrincipal();
+        Object userName = principalCollection.getPrimaryPrincipal();
+        UserInfo userInfo = (UserInfo) SecurityUtils.getSubject().getPrincipal();
+        if (null == userName || null == userInfo) {
+           return null;
+        }
         SimpleAuthorizationInfo info = new SimpleAuthorizationInfo();
         // 用户角色集合
-        Set<String> roles = new HashSet<>();
-        roles.add("staff");
-        roles.add("ordinary_admin");
-        roles.add("admin");
-        info.setRoles(roles);
+        List<InfoRole> infoRoles = userInfoBo.selectRoleByUserId(userInfo.getId());
+        Set<String> roleSet = infoRoles.stream().map(InfoRole::getrCode).collect(Collectors.toSet());
+        info.setRoles(roleSet);
         // 用户权限集合
-        Set<String> permissions = new HashSet<>();
-        permissions.add("user:menu_1");
-        permissions.add("user:menu_1");
+        List<InfoPermission> permissionList = null;
+        if (roleSet.contains("admin")) {
+            // 超级管理员,查询所有权限
+            permissionList = userInfoBo.selectAllPermission();
+        } else {
+            // 查询拥有的权限
+            permissionList = userInfoBo.selectPermissionByRoleIds(new ArrayList<>(roleSet));
+        }
+        Set<String> permissions = permissionList.stream().map(InfoPermission::getpCode).collect(Collectors.toSet());
         info.setStringPermissions(permissions);
         return info;
     }
+
 
     /**
      * 身份认证：登录验证
@@ -61,7 +70,7 @@ public class ShiroCustomRealm extends AuthorizingRealm {
         log.info("-------身份认证开始--------");
         String userName = (String) authenticationToken.getPrincipal();
         // 1、查询账号信息
-        UserInfo userInfo = userService.selectUserByName(userName);
+        UserInfo userInfo = userInfoBo.selectUserByName(userName);
         if (null == userInfo) {
             // 查无此人
             throw new UnknownAccountException();

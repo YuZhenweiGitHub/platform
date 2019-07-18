@@ -5,6 +5,7 @@ import org.apache.shiro.SecurityUtils;
 import org.apache.shiro.ShiroException;
 import org.apache.shiro.authc.UsernamePasswordToken;
 import org.apache.shiro.session.Session;
+import org.apache.shiro.subject.PrincipalCollection;
 import org.apache.shiro.subject.Subject;
 
 /**
@@ -127,6 +128,10 @@ public class TokenManager {
      */
     public static void clearNowUserAuth() {
 
+    }
+
+    public static PrincipalCollection getPrincipals() {
+       return SecurityUtils.getSubject().getPrincipals();
     }
 
 }

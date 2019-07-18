@@ -1,5 +1,6 @@
 <!DOCTYPE html>
-<html lang="zh" xmlns:th="http://www.thymeleaf.org">
+<html lang="zh" xmlns:th="http://www.thymeleaf.org"
+	  xmlns:shiro="http://www.pollix.at/thymeleaf/shiro">
 <head>
 	<meta charset="utf-8" />
 	<title>首页</title>
@@ -50,7 +51,7 @@
 
 	<div class="navbar-container" id="navbar-container">
 		<div class="navbar-header pull-left">
-			<a href="#" class="navbar-brand">
+			<a href="#" shiro:hasRole="admin1" class="navbar-brand">
 				<small>
 					<i class="icon-leaf"></i>
 					Ace Admin

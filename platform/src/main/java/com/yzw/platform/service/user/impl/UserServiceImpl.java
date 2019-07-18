@@ -5,6 +5,7 @@ import com.yzw.platform.bo.user.UserInfoBo;
 import com.yzw.platform.config.DataSourceConfig;
 import com.yzw.platform.dao.user.InfoStreetMapper;
 import com.yzw.platform.dao.user.VillageQkMapper;
+import com.yzw.platform.entity.user.InfoPermission;
 import com.yzw.platform.entity.user.InfoStreet;
 import com.yzw.platform.entity.user.UserInfo;
 import com.yzw.platform.entity.user.VillageQk;

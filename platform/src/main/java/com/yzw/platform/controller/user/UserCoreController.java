@@ -1,6 +1,5 @@
 package com.yzw.platform.controller.user;
 
-import com.yzw.platform.annotation.DS;
 import com.yzw.platform.core.TokenManager;
 import com.yzw.platform.dto.user.UserQueryDto;
 import com.yzw.platform.entity.user.InfoStreet;
@@ -22,11 +21,7 @@ import org.springframework.web.bind.annotation.*;
 import org.springframework.web.multipart.MultipartFile;
 
 import javax.servlet.http.HttpServletRequest;
-import javax.sound.sampled.Line;
 import java.io.InputStream;
-import java.text.SimpleDateFormat;
-import java.time.LocalDateTime;
-import java.time.format.DateTimeFormatter;
 import java.util.*;
 
 @Slf4j
@@ -125,7 +120,7 @@ public class UserCoreController {
                     street.setName(name);
                     street.setCreateTime(createTime.getDateCellValue());
                     street.setDistrictGbCode("0");
-                    street.setTs(ts.getDateCellValue().getTime());
+                    street.setTs(ts.getDateCellValue().getTime()/1000);
                     if (map.containsKey(name) || name.indexOf("(") > -1 || name.indexOf("（") > -1) {
                         // 重复数据标记为删除
                         street.setStatus(1);
